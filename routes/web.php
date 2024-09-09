@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\Controller4;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +31,5 @@ Route::get('/pertemuan3tugas', function () {
 });
 
 Route::get('/posts', [PostController::class, 'index']);
+
+Route::get('/pertemuan4tugas', [Controller4::class, 'index']);
